@@ -1,0 +1,19 @@
+* La API me va a permitir conectar cliente con servidor y base de datos
+* Los verbos a usar por API son: 
+                                -GET para obtener datos
+                                -POST para crear datos 
+                                -PUT para actualizar datos, lleva ID
+                                -DELETE para eliminar datos, lleva ID
+* Códigos:
+          -404, que no hay recursos  
+
+1) Inicio npm init
+2) Instalo módulos, npm i express morgan
+3) npm i nodemon D (modulo que actualiza el servidor automaticamente)
+(la D se pone para que sea dependencia de desarrollo, o sea que se requiere mientras trabajo en el codigo, y no cueando esté terminado)
+4) en packpage.jsson, en seccion script poner: "dev": "nodemon src/index.js" para que actualizar el server automaticamente
+5) ejecutar el servidor mediante: npm run dev (asi lo hace con nodemon)
+6) El archivo sample.json se crea para simular una base de datos.
+7) npm i underscore --> es biblioteca para dar nuevas funcionalidades con los datos
+8) el arreglo de users lo tomo de la web jsonplaceholders, debo primero poner en terminal npm i node-fetch
+9) como fetch me tiraba error cambie por axios, npm install axios
